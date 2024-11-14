@@ -1,9 +1,23 @@
-# FTPRush_Linux_Script
-FTPRush Installer Script for Linux: Automated Download, Setup, and Desktop Entry Creation
+# FTPRush Installer Script for Linux: Automated Download, Setup, and Desktop Entry Creation
 
-## FTPRush Installer Script for Ubuntu
+**FTPRush Installer Script for Linx**  
+A simple, automated installer for FTPRush on Ubuntu Linux. This script handles downloading, extracting, and setting up FTPRush in `/opt/FTPRush`, with an option to add a desktop entry. It includes download customization, cleanup prompts, and an uninstallation feature for easy management.
 
-This guide provides a step-by-step installation process for FTPRush on Ubuntu. The script automates downloading, extracting, and setting up FTPRush, including adding a desktop entry.
+### Supported Operating Systems
+
+The `install_ftprush.sh` script is designed to work on Ubuntu and other Debian-based Linux distributions. These include:
+
+- **Ubuntu** (all current versions)
+- **Debian** (10 and above)
+- **Linux Mint** (19 and above)
+- **Pop!_OS** (20.04 and above)
+- **Kubuntu** and **Xubuntu** (versions that match Ubuntu support)
+
+While this script is optimized for these systems, it may work on other Linux distributions with slight modifications.
+
+## FTPRush Installer Script for Linux
+
+This guide provides a step-by-step installation process for FTPRush on Linux. The script automates downloading, extracting, and setting up FTPRush, including adding a desktop entry.
 
 ### Installation Instructions
 
