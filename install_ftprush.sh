@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Change directory to root to ensure correct paths and permissions
+cd / || { echo "Failed to navigate to root directory. Exiting."; exit 1; }
+
 DOWNLOAD_URL="https://www.wftpserver.com/download/FTPRush_linux.tar.bz2"
 INSTALL_DIR="/opt/FTPRush"
 DESKTOP_ENTRY="/usr/share/applications/ftprush.desktop"
@@ -76,17 +79,22 @@ EOF
     echo "Desktop entry created successfully."
   fi
 
-  # Remove the downloaded tar file (optional)
-  echo "Remove the downloaded tar file? (y/N)"
-  read -p "Enter your choice: " remove_tar
-
-  if [[ "$remove_tar" == "y" || "$remove_tar" == "Y" ]]; then
-    rm "$TAR_FILE"
-  fi
-
   echo "FTPRush installation completed successfully!"
+
+  # Prompt user to clean up the downloaded tar file and icon
+  echo "Would you like to remove the temporary downloaded files? (y/N)"
+  read -p "Enter your choice: " cleanup_choice
+
+  if [[ "$cleanup_choice" == "y" || "$cleanup_choice" == "Y" ]]; then
+    echo "Cleaning up temporary files..."
+    rm "$TAR_FILE"
+    echo "Cleanup completed."
+  else
+    echo "Temporary files retained in $TAR_FILE."
+  fi
 }
 
+# Function to uninstall FTPRush
 uninstall_ftprush() {
   echo "Uninstalling FTPRush..."
   if [ -d "$INSTALL_DIR" ]; then
@@ -98,6 +106,7 @@ uninstall_ftprush() {
   fi
 }
 
+# Main menu for user interaction
 echo "Choose an option:"
 echo "1. Install FTPRush"
 echo "2. Uninstall FTPRush"
