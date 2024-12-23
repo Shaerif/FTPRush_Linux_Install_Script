@@ -180,7 +180,24 @@ GNU General Public License v3.0 - see [LICENSE](LICENSE) file for details.
 - Linux community contributors
 - Open source supporters
 
+## 📊 Project Statistics
+
+<div align="center">
+
+### 🕒 Development Metrics
+| Metric | Value |
+|:------:|:-----:|
+| Time Invested | 12 hours and 2 minutes |
+| Last Updated | 2024-12-23 01:59:05 EST |
+| Release Status | Stable |
+| Active Contributors | 1 |
+
+</div>
+
+> **Note**: Time tracking started from project inception. Updates are automated via GitHub Actions.
+
 ---
+
 <p align="center">
 <b>Made with ❤️ for the Linux community</b><br>
 <i>Copyright © 2024 FTPRush Installer Script Team</i>
