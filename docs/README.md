@@ -187,14 +187,17 @@ GNU General Public License v3.0 - see [LICENSE](LICENSE) file for details.
 ### 🕒 Development Metrics
 | Metric | Value |
 |:------:|:-----:|
-| Time Invested | 12 hours and 6 minutes |
-| Last Updated | 2024-12-23 02:09:24 EST |
+| Time Invested | 12 hours and 11 minutes |
+| Last Updated | 2024-12-23 02:14:23 EST |
 | Release Status | Stable |
 | Active Contributors | 1 |
 
 </div>
 
 > **Note**: Time tracking started from project inception. Updates are automated via GitHub Actions.
+
+## 🙏 Credits & Thanks
+For a detailed list of contributors and tools used, please see our [Credits & Thanks](CREDITS.md) page.
 
 ---
 
