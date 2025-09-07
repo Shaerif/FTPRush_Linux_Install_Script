@@ -1,0 +1,4 @@
+# ShellCheck configuration file
+# See https://www.shellcheck.net/wiki/SC1000
+
+disable=SC1090,SC1091,SC2001,SC2034,SC2086,SC2155,SC2164,SC2181,SC2229

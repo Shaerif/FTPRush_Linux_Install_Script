@@ -1,0 +1,30 @@
+#!/bin/bash
+# Wrapper script for FTPRush
+# This script allows running FTPRush from the command line
+
+# Default installation path
+DEFAULT_INSTALL_DIR="/opt/FTPRush"
+
+# Try to find the installation directory
+if [ -f "$DEFAULT_INSTALL_DIR/FTPRush" ]; then
+    INSTALL_DIR="$DEFAULT_INSTALL_DIR"
+else
+    # Try to find the installation directory from the desktop file
+    if [ -f "/usr/share/applications/ftprush.desktop" ]; then
+        EXEC_LINE=$(grep "^Exec=" /usr/share/applications/ftprush.desktop | head -1)
+        if [[ "$EXEC_LINE" =~ Exec=(.*)/FTPRush ]]; then
+            INSTALL_DIR="${BASH_REMATCH[1]}"
+        fi
+    fi
+fi
+
+if [ -z "$INSTALL_DIR" ] || [ ! -f "$INSTALL_DIR/FTPRush" ]; then
+    echo "Error: Could not find FTPRush installation." >&2
+    echo "Please ensure FTPRush is installed correctly." >&2
+    exit 1
+fi
+
+# Run FTPRush with all arguments
+"$INSTALL_DIR/FTPRush" "$@"
+
+exit $?
