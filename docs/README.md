@@ -4,6 +4,32 @@
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
+## 🚀 One-Line Installation
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+```
+
+## 📚 Quick Links
+
+- [📋 Changelog](CHANGELOG.md) - Version history and changes
+- [👥 Credits](CREDITS.md) - Project contributors and acknowledgments
+- [✅ Tasks](tasks.md) - Project tasks and progress
+- [📄 License](LICENSE) - GPL-3.0 License
+
+## ⚡ Quick Commands
+
+```bash
+# Install FTPRush
+curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+
+# Uninstall FTPRush  
+sudo install_ftprush.sh uninstall
+
+# Launch FTPRush
+ftprush
+```
+
 ---
 
 ## Overview
@@ -57,6 +83,116 @@ sudo chmod +x /usr/local/bin/install_ftprush.sh
 sudo cp install_ftprush.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/install_ftprush.sh
 ```
+
+---
+
+## 📖 User Guide
+
+### Getting Started
+
+This guide will walk you through installing and using FTPRush on your Linux system.
+
+#### Step 1: Quick Installation
+
+The fastest way to install FTPRush is using our one-line installer:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+```
+
+This command will:
+- Download the installer script
+- Install FTPRush to `/opt/FTPRush`
+- Create a desktop entry for easy access
+- Set up the command-line wrapper
+
+#### Step 2: Launch FTPRush
+
+After installation, you can launch FTPRush in several ways:
+
+**From Desktop:**
+- Look for "FTPRush" in your applications menu
+- Click the FTPRush icon on your desktop (if created)
+
+**From Command Line:**
+```bash
+ftprush
+```
+
+**From File Manager:**
+- Navigate to `/opt/FTPRush`
+- Double-click the `ftprush` executable
+
+#### Step 3: First-Time Setup
+
+When you first launch FTPRush:
+1. The application will start with a clean interface
+2. Configure your FTP/SFTP connections using the connection manager
+3. Set your preferences in the settings menu
+
+### Common Tasks
+
+#### Installing to a Custom Location
+
+If you want to install FTPRush to a different directory:
+
+```bash
+sudo install_ftprush.sh --prefix=/your/custom/path install
+```
+
+#### Backing Up Configuration
+
+Before major updates or system changes:
+
+```bash
+sudo install_ftprush.sh --backup=/path/to/backup install
+```
+
+#### Restoring Configuration
+
+To restore a previous configuration:
+
+```bash
+sudo install_ftprush.sh --restore=/path/to/backup install
+```
+
+#### Uninstalling FTPRush
+
+To completely remove FTPRush:
+
+```bash
+sudo install_ftprush.sh uninstall
+```
+
+To uninstall while keeping a backup of your settings:
+
+```bash
+sudo install_ftprush.sh --backup=/path/to/backup uninstall
+```
+
+### Advanced Usage
+
+#### Silent Installation for Scripts
+
+For automated deployments or scripts:
+
+```bash
+sudo install_ftprush.sh --yes --no-update-check install
+```
+
+#### Managing the Command-Line Wrapper
+
+Install wrapper separately:
+```bash
+sudo install_ftprush.sh --install-wrapper
+```
+
+Remove wrapper:
+```bash
+sudo install_ftprush.sh --remove-wrapper
+```
+
+---
 
 ## Usage
 
@@ -400,5 +536,5 @@ See `CREDITS.md`.
 
 | Metric | Value |
 |:------:|:-----:|
-| Time Invested | 0 hours and 0 minutes |
-| Last Updated | Not set |
+| Time Invested | 41 hours and 57 minutes |
+| Last Updated | 2025-10-01 11:16:55 EST |
