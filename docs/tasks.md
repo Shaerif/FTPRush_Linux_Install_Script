@@ -61,8 +61,6 @@ This document tracks micro-tasks to maintain momentum and visibility. Tasks are 
 - [ ] Add more detailed examples for advanced usage
 
 ## Notes
-
-- The `.vscode/update_readme.py` tool is configured to update `docs/README.md` statistics.
 - Keep documentation changes synchronized with `install_ftprush.sh`.
 - Follow semantic versioning for releases.
 - Write tests for all new features.

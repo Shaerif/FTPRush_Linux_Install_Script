@@ -1,4 +1,5 @@
 ## Ignore Visual Studio Code configuration files
 ## This includes settings.json, launch.json, tasks.json and other editor-specific files
-.vscode/**
+.vscode/
 .kiro/
+docs/tests&reports/

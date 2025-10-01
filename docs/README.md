@@ -552,9 +552,9 @@ curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Scrip
 
 ---
 
-## Usage
+## 📖 Usage
 
-### Interactive Mode (Default)
+### 🖱️ Interactive Mode (Default)
 
 Run the installer without arguments to use the interactive menu:
 
@@ -562,37 +562,37 @@ Run the installer without arguments to use the interactive menu:
 sudo install_ftprush.sh
 ```
 
-### Non-Interactive Mode
+### ⚡ Non-Interactive Mode
 
 For automated installations, you can use command-line arguments:
 
 ```bash
-# Install with default options (non-interactive)
+# 🚀 Install with default options (non-interactive)
 sudo install_ftprush.sh --yes install
 
-# Install to a custom directory
+# 📁 Install to a custom directory
 sudo install_ftprush.sh --yes --prefix=/opt/custom/path install
 
-# Uninstall (removes all files)
+# 🗑️ Uninstall (removes all files)
 sudo install_ftprush.sh --yes uninstall
 ```
 
-### Command-Line Options
+### ⚙️ Command-Line Options
 
-- `--yes` or `--silent`: Run in non-interactive mode, automatically answering 'yes' to all prompts
-- `--prefix=PATH`: Install to a custom directory (e.g., `--prefix=/opt/custom/path`)
-- `--backup=DIR`: Backup configuration to the specified directory during installation/uninstallation
-- `--no-backup`: Skip configuration backup during uninstallation
-- `--restore=DIR`: Restore configuration from the specified directory during installation
-- `--no-update-check`: Skip checking for script updates
-- `--install-wrapper`: Install command-line wrapper (requires root)
-- `--remove-wrapper`: Remove command-line wrapper (requires root)
-- `--version` or `-v`: Show version information
-- `install`: Install FTPRush
-- `uninstall`: Remove FTPRush
-- `-h` or `--help`: Show help message
+- 🤖 `--yes` or `--silent`: Run in non-interactive mode, automatically answering 'yes' to all prompts
+- 📁 `--prefix=PATH`: Install to a custom directory (e.g., `--prefix=/opt/custom/path`)
+- 💾 `--backup=DIR`: Backup configuration to the specified directory during installation/uninstallation
+- ⏭️ `--no-backup`: Skip configuration backup during uninstallation
+- 🔄 `--restore=DIR`: Restore configuration from the specified directory during installation
+- 🔄 `--no-update-check`: Skip checking for script updates
+- 🔗 `--install-wrapper`: Install command-line wrapper (requires root)
+- 🗑️ `--remove-wrapper`: Remove command-line wrapper (requires root)
+- 📊 `--version` or `-v`: Show version information
+- 🚀 `install`: Install FTPRush
+- 🗑️ `uninstall`: Remove FTPRush
+- ❓ `-h` or `--help`: Show help message
 
-### Examples
+### 💡 Examples
 
 ```bash
 # Basic installation
@@ -731,62 +731,62 @@ The script will remove:
 
 ---
 
-## Features (Implemented)
+## ✨ Features (Implemented)
 
-- **Automated Installation**
-  - Downloads FTPRush tarball with checksum verification
-  - Extracts to `/opt/FTPRush` (or custom path) with proper permissions
-  - Creates desktop entry at `/usr/share/applications/ftprush.desktop`
-  - Downloads and sets up application icon
+- **🤖 Automated Installation**
+  - 📥 Downloads FTPRush tarball with checksum verification
+  - 📦 Extracts to `/opt/FTPRush` (or custom path) with proper permissions
+  - 🖥️ Creates desktop entry at `/usr/share/applications/ftprush.desktop`
+  - 🎨 Downloads and sets up application icon
 
-- **Flexible Configuration**
-  - Custom installation directory via `--prefix` option
-  - Non-interactive mode with `--yes/--silent` for automation
-  - Interactive prompts for user-friendly manual installation
+- **⚙️ Flexible Configuration**
+  - 📁 Custom installation directory via `--prefix` option
+  - 🔇 Non-interactive mode with `--yes/--silent` for automation
+  - 🖱️ Interactive prompts for user-friendly manual installation
 
-- **Configuration Management**
-  - Backup user configuration before uninstallation or upgrade
-  - Restore configuration from backup during installation
-  - Specify custom backup/restore directories
-  - Skip backup with `--no-backup` flag
+- **💾 Configuration Management**
+  - 🛡️ Backup user configuration before uninstallation or upgrade
+  - 🔄 Restore configuration from backup during installation
+  - 📂 Specify custom backup/restore directories
+  - ⏭️ Skip backup with `--no-backup` flag
 
-- **Safety Features**
-  - Checksum verification of downloaded files
-  - Proper cleanup of temporary files
-  - Clear confirmation before removing existing installations
-  - Graceful handling of partial installations
-  - Automatic backup before uninstallation
+- **🔒 Safety Features**
+  - ✅ Checksum verification of downloaded files
+  - 🧹 Proper cleanup of temporary files
+  - ⚠️ Clear confirmation before removing existing installations
+  - 🛠️ Graceful handling of partial installations
+  - 💾 Automatic backup before uninstallation
 
-- **Uninstallation**
-  - Complete removal of all installed files
-  - Option to keep or remove configuration files
-  - Works with both default and custom installation paths
-  - Optional configuration backup
+- **🗑️ Uninstallation**
+  - 🧽 Complete removal of all installed files
+  - 📋 Option to keep or remove configuration files
+  - 🎯 Works with both default and custom installation paths
+  - 💾 Optional configuration backup
 
-## Known Limitations
+## ⚠️ Known Limitations
 
-- **Configuration Management**
-  - Only backs up common configuration directories (`~/.config/FTPRush` and `~/.FTPRush`)
-  - Does not back up files outside the user's home directory
-  - Backup is not encrypted
+- **💾 Configuration Management**
+  - 📁 Only backs up common configuration directories (`~/.config/FTPRush` and `~/.FTPRush`)
+  - 🏠 Does not back up files outside the user's home directory
+  - 🔓 Backup is not encrypted
 
-- **System Integration**
-  - Not added to system `PATH` by default (use full path or create alias)
-  - No desktop environment detection for optimal icon placement
+- **🔗 System Integration**
+  - 🛤️ Not added to system `PATH` by default (use full path or create alias)
+  - 🖥️ No desktop environment detection for optimal icon placement
 
-## Development
+## 🛠️ Development
 
-### Running Tests
+### 🧪 Running Tests
 
 This project includes a comprehensive test suite that runs in a Linux environment, including WSL (Windows Subsystem for Linux).
 
-#### Prerequisites
+#### 📋 Prerequisites
 
-- Bash
-- BATS (Bash Automated Testing System)
-- ShellCheck (for static code analysis)
+- 🐚 Bash
+- 🦇 BATS (Bash Automated Testing System)
+- 🔍 ShellCheck (for static code analysis)
 
-#### Running Tests
+#### 🚀 Running Tests
 
 1. **Using WSL (Windows Subsystem for Linux):**
    ```bash
@@ -809,30 +809,30 @@ This project includes a comprehensive test suite that runs in a Linux environmen
    ./run_tests.sh
    ```
 
-#### What the Tests Do
-1. **Version Check**: Verifies the `--version` flag works correctly
-2. **Help System**: Tests the `--help` flag and command-line help output
-3. **Error Handling**: Verifies proper error messages for invalid options
-4. **Basic Functionality**: Ensures the installer can be executed without errors
+#### 🎯 What the Tests Do
+1. **📊 Version Check**: Verifies the `--version` flag works correctly
+2. **❓ Help System**: Tests the `--help` flag and command-line help output
+3. **⚠️ Error Handling**: Verifies proper error messages for invalid options
+4. **⚙️ Basic Functionality**: Ensures the installer can be executed without errors
 
-#### Test Structure
-- `test/test_install_ftprush.bats`: Main test file with test cases
-- `test/test_helper/`: Helper files for BATS testing
-- `.shellcheckrc`: Configuration for ShellCheck
+#### 📁 Test Structure
+- 🧪 `test/test_install_ftprush.bats`: Main test file with test cases
+- 🛠️ `test/test_helper/`: Helper files for BATS testing
+- ⚙️ `.shellcheckrc`: Configuration for ShellCheck
 
-### Test Structure
+### 📁 Test Structure
 
-- `test/test_install_ftprush.bats`: Main test file with test cases
-- `test/test_helper/`: Helper files for BATS testing
-- `.shellcheckrc`: Configuration for ShellCheck
+- 🧪 `test/test_install_ftprush.bats`: Main test file with test cases
+- 🛠️ `test/test_helper/`: Helper files for BATS testing
+- ⚙️ `.shellcheckrc`: Configuration for ShellCheck
 
-## Future Enhancements
+## 🚀 Future Enhancements
 
-- [ ] Add more test cases for edge cases
-- [ ] Implement CI/CD with GitHub Actions
-- [ ] Desktop environment detection for better integration
-- [ ] Support for more Linux distributions
-- [ ] Package manager integration (deb/rpm)
+- [ ] 🧪 Add more test cases for edge cases
+- [ ] 🔄 Implement CI/CD with GitHub Actions
+- [ ] 🖥️ Desktop environment detection for better integration
+- [ ] 🐧 Support for more Linux distributions
+- [ ] 📦 Package manager integration (deb/rpm)
 
 ---
 

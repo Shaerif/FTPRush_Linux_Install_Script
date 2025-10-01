@@ -185,7 +185,7 @@ fi
 
 # Derived paths
 DESKTOP_ENTRY="/usr/share/applications/ftprush.desktop"  # System-wide desktop shortcut
-EXEC_PATH="$INSTALL_DIR/ftprush"         # Executable path
+EXEC_PATH="$INSTALL_DIR/FTPRush"         # Executable path
 TAR_FILE="/tmp/FTPRush_linux.tar.bz2"    # Temporary download location
 ICON_URL="https://www.wftpserver.com/images/ftprush_app_logo.png"
 ICON_FILE="$INSTALL_DIR/ftprush.png"     # Local icon storage
@@ -352,7 +352,7 @@ install_ftprush() {
     local DESKTOP_ENTRY="/usr/share/applications/ftprush.desktop"
     local TAR_FILE="/tmp/FTPRush_linux.tar.bz2"
     local DOWNLOAD_URL="https://www.wftpserver.com/download/FTPRush_linux.tar.bz2"
-    local EXPECTED_CHECKSUM="d41d8cd98f00b204e9800998ecf8427e"  # Replace with actual checksum
+    local EXPECTED_CHECKSUM="cbbef468f257814a10fafdd7ce6938ca6253b90ea0bf1e63e35f03c8f66cfc6d"  # SHA256 checksum of FTPRush_linux.tar.bz2
     
     # Check current installation
     local current_version=$(get_installed_version)
