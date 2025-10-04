@@ -34,7 +34,7 @@
 ## 🚀 One-Line Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+curl -fsSL https://raw.githubusercontent.com/ReadyPixels/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
 ```
 
 ## 📚 Quick Links
@@ -54,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Scrip
 
 ```bash
 # 🚀 Install FTPRush
-curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+curl -fsSL https://raw.githubusercontent.com/ReadyPixels/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
 
 # 🗑️ Uninstall FTPRush  
 sudo install_ftprush.sh uninstall
@@ -133,7 +133,7 @@ You can install the script to a convenient location (e.g., `/usr/local/bin`) and
 
 ```bash
 # 📥 Download the installer
-sudo wget https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh -O /usr/local/bin/install_ftprush.sh
+sudo wget https://raw.githubusercontent.com/ReadyPixels/FTPRush_Linux_Install_Script/main/install_ftprush.sh -O /usr/local/bin/install_ftprush.sh
 
 # 🔧 Make executable
 sudo chmod +x /usr/local/bin/install_ftprush.sh
@@ -170,7 +170,7 @@ This guide will walk you through installing and using FTPRush on your Linux syst
 The fastest way to install FTPRush is using our one-line installer:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+curl -fsSL https://raw.githubusercontent.com/ReadyPixels/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
 ```
 
 This command will:
@@ -499,7 +499,7 @@ sudo install_ftprush.sh
 
 **One-Line Installation:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Shaerif/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
+curl -fsSL https://raw.githubusercontent.com/ReadyPixels/FTPRush_Linux_Install_Script/main/install_ftprush.sh | sudo bash -s -- --yes install
 ```
 
 ---
@@ -928,7 +928,7 @@ sudo update-desktop-database
 
 <div align="center">
 
-| 🏠 [Repository](https://github.com/Shaerif/FTPRush_Linux_Install_Script) | 🐛 [Issues](https://github.com/Shaerif/FTPRush_Linux_Install_Script/issues) | 📦 [Releases](https://github.com/Shaerif/FTPRush_Linux_Install_Script/releases) |
+| 🏠 [Repository](https://github.com/ReadyPixels/FTPRush_Linux_Install_Script) | 🐛 [Issues](https://github.com/ReadyPixels/FTPRush_Linux_Install_Script/issues) | 📦 [Releases](https://github.com/ReadyPixels/FTPRush_Linux_Install_Script/releases) |
 |:---:|:---:|:---:|
 
 </div>
@@ -952,9 +952,9 @@ This project is licensed under the **GPL-3.0 License**
 *This script is not affiliated with FTPRush. FTPRush is a trademark of its respective owners.*
 
 ---
+---
+**Made with ❤️ for the Linux community by ReadyPixels LLC**
 
-**Made with ❤️ for the Linux community**
-
-[![⭐ Star this repo](https://img.shields.io/github/stars/Shaerif/FTPRush_Linux_Install_Script?style=social)](https://github.com/Shaerif/FTPRush_Linux_Install_Script)
+[![⭐ Star this repo](https://img.shields.io/github/stars/ReadyPixels/FTPRush_Linux_Install_Script?style=social)](https://github.com/ReadyPixels/FTPRush_Linux_Install_Script)
 
 </div>

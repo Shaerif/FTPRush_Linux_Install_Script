@@ -35,7 +35,7 @@ check_for_updates() {
         echo " You are currently using v$current_version"
         echo ""
         echo " To update, please visit:"
-        echo " https://github.com/Shaerif/FTPRush_Linux_Install_Script"
+        echo " https://github.com/ReadyPixels/FTPRush_Linux_Install_Script"
         echo "===================================================================="
         echo ""
         
@@ -83,7 +83,7 @@ BACKUP_DIR=""
 NO_BACKUP=false
 RESTORE_DIR=""
 CHECK_FOR_UPDATES=true
-VERSION_CHECK_URL="https://api.github.com/repos/Shaerif/FTPRush_Linux_Install_Script/releases/latest"
+VERSION_CHECK_URL="https://api.github.com/repos/ReadyPixels/FTPRush_Linux_Install_Script/releases/latest"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
